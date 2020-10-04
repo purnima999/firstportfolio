@@ -269,7 +269,7 @@ h2.tittle::before{
 	background-color:#f3971b;
 
 }
-/*servive section*/
+/*servive section
 .services{
 	float: left;
 	width: 100%;
@@ -329,6 +329,78 @@ h2.tittle::before{
 	letter-spacing: .5px;
 	text-align: center;
 	font-weight: 400;
+}*/
+.services{
+	float: left;
+	width: 100%;
+	padding:80px 0px; 
+	background-color:#292929;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0;
+	padding-bottom:60px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #f3971b;
+	position: relative;
+	letter-spacing: .5px;
+	
+}
+
+.services .services-content{
+ width: 100%;
+ float: left;
+}
+
+.services .services-content .card{
+	width: 33.33%;
+	float: left;
+	padding:15px;
+}
+
+.services .services-content .card .box{
+	background-color:#353535;
+	padding:30px;
+	position: relative;
+}
+.services .services-content .card .box::before{
+	content:'';
+	position: absolute;
+	left:0;
+	bottom:0px;
+	height: 3px;
+	width:0;
+	background-color: #f3971b;
+	z-index:1;
+	transition: width .5s ease;
+}
+.services .services-content .card .box:hover::before{
+	width: 100%;
+}
+
+.services .services-content .card .box .icon{
+	text-align: center;
+	font-size:40px;
+	color: #f3971b;
+}
+
+.services .services-content .card .box h3{
+	font-size:20px;
+	color:#ffffff;
+	text-align: center;
+	margin:20px 0 10px;
+	font-weight:600;
+
+}
+
+.services .services-content .card .box p{
+	color:#c2c0c3;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing:.5px;
+	text-align: center;
+	font-weight: 400;
+
 }
 .skills{
 	float: left;
