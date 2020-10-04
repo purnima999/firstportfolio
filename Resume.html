@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset="utf-8" />
+<meta name="verify-v1" content="91yIG+EaOdwKuPX+R9ChHEWVXJ6wdQsq0gqD1c1sbaY="/>
+<title>PurnimaPathak Resume</title>
+<style type="text/css">
+body{font-family:Geneva, Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;text-align:center;margin:0;padding:0;line-height:1.5em;}
+header, section, article{display:block;}
+header{text-align:center;position:relative;z-index:1;}
+section{margin:20px 0 10px;padding:0;}
+p{margin-top:0;padding:0;}
+ul, ol{margin:10px 0 0;padding:0;}
+h1{margin:5px;font-size:2em;font-weight:bold;}
+h2{font-size:1.4em;font-style:italic;font-weight:bold;margin:5px 0;}
+h5{margin:20px 0 10px;font-size:1.2em;font-weight:bold;}
+a, a:link, a:visited{border:medium none;text-decoration:none;color:#009;cursor:pointer;}
+#resumecontainer{background-color:#F6F6F6;text-align:left;padding:20px;margin:20px auto;min-width:300px;max-width:600px;position:relative;}
+header p{margin:5px;}
+#links img{border:0 none;}
+.skills{margin:10px 10px;}
+.project{margin:10px 0 20px 10px;}
+section > p, section > article{margin:5px 0 0 10px;}
+#skills_section{position:relative;z-index:0;}
+#body_popup{position:absolute;left:0;top:0;z-index:1000;display:none;background-color:#FFFFFF;border:1px solid #000;padding:20px;min-width:300px;max-width:440px;text-align:left;}
+a:hover{text-decoration:none;color:#03F;}
+.close{display:block;float:right;}
+li{margin-left:5px;list-style-position:inside;list-style-type:circle;padding-left:0}
+ol > li{list-style-position:inside;list-style-type:decimal;margin-bottom:10px;margin-left:0;}
+#links{position:absolute;top:0;right:0;width:60px;}
+.formats{display:inline-block;height:16px;width:16px;background:url(img/links.png) no-repeat;}
+#doc{background-position:0 0;}
+#txt{background-position:0 -52px;}
+#pdf{background-position:0 -26px;}
+.indent{margin-left:20px;}
+@media only screen and (max-device-width: 480px) {
+body{font-size:18px;}
+#resumecontainer{padding:20px;margin:20px;max-width:1000px;}	
+#body_popup{max-width:1000px;}
+}
+</style>
+<script type="text/javascript">
+(function(){
+  function loadScript(url, callback){  //lifted from Nick Zakas
+    var script = document.createElement("script")
+    script.type = "text/javascript";
+    if (script.readyState){  //IE
+      script.onreadystatechange = function(){
+        if (script.readyState == "loaded" ||
+          script.readyState == "complete"){
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    }else{  //Others
+      script.onload = function(){
+        callback();
+      };
+    }
+    script.src = url;
+    document.body.appendChild(script);
+  }
+  //libraries to load after document.load event
+  function afterLoad() {
+	loadScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", afterJQLoad);
+	loadScript("http://www.google-analytics.com/ga.js", googleCrap);
+  }
+  //stuff to do after jQuery is loaded
+  function afterJQLoad(){
+    var details = '',
+      coords = {left:'0px', top:'0px'},
+      close = function(){
+        details = '';
+        $("#body_popup > div.temp").remove();
+	    $("#body_popup").css({left:'0px', top:'0px'}).hide();
+      };
+    $(".details, .notice").click(function(e){  
+      var $target = $(this),
+	    coords = {left:'10px', top:e.pageY + 'px'};
+	  if(details !== ''){ 
+	    close();
+	  }
+	  details = $(this.rel).html();
+	  var id = ($target.hasClass("details")) ? "#skills_popup" : "#notice_popup";
+	  $("#body_popup").append(details).css(coords).show();
+    });
+    $(".close").click(function(){
+	  close();
+    });
+    $(".external").on('click', function(){
+      var url = this.rel;
+      window.open(url);
+      return;
+    }); 
+  }
+  function googleCrap(){
+    try {
+      var pageTracker = _gat._getTracker("UA-8130141-1");
+      pageTracker._trackPageview();
+    }catch(err){}  
+  }
+  
+  if (window.addEventListener){
+    window.addEventListener("load", afterLoad, false);
+  }else if (window.attachEvent){
+    window.attachEvent("onload", afterLoad);
+  } else {
+    window.onload = afterLoad;
+  }
+})();
+</script>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="links">
+  <a class="formats" id="pdf" href="dshapiro.pdf"></a>
+  <!--<a class="formats" id="doc" href="dshapiro.doc"></a>-->
+  <!--<a class="formats" id="txt" href="dshapiro.txt"></a>-->
+</div>
+
+<div id="resumecontainer">
+
+<header>
+<h1>Purnima Pathak</h1>
+<p>Baldeo,Mathura</p>
+<p>+919548510085</p>
+<p><a href="mailto:purnimapathak999@gmail.com">purnimapathak999@gmail.com</a></p>
+<p><a href="mailto:purnima181779@dei.ac.in">purnima181779@dei.ac.in</p>
+<p><a href="mailto:purnimapathak999@gmail.com"></a></p>
+<p><a href="https://www.linkedin.com/in/purnima-pathak-pu999">https://www.linkedin.com/in/purnima-pathak-pu999</a></p>
+
+</header>
+<!--education-->
+<section>
+<h2>Education</h2>
+<p><strong>INTEGRATED DUAL DEGREE VOC.DIP.IN.T AND B.Sc  COMPUTER SCIENCE.</strong><br>
+Dayalbagh Educational Institute,Agra</p><p style="float: right"> Aug 2018- july2021</p>
+<p>Data Structure, Algorithms, Operating System, DBMS, Computer Graphics, <br>Computional Science, Computer System Architecture, Matlab</p>   
+<p><strong>Intermediate</strong><br>Saraswati Vidhya Mandir</p>
+<p style="float: right"> july 2017- may 2018</p>
+<p>Physics,Chemistry,Mathematics</p>
+
+</section>
+<hr>
+<!--end education-->
+<!--start skills-->
+<section>
+<h2>Skills</h2>
+<article class="skills">
+<strong>Languages & Scripting</strong>
+<p style="float: right">HTML, CSS, C, C++, C#, Java, JavaScript, JavaAdv.</p>
+</article>
+<article class="skills">
+<strong>Web Framework<br>
+        Libraries</strong>
+<p style="float: right">ReactJS, MySQL Connector</p>
+</article><br>
+<article class="skills">
+<strong>Databases</strong>
+<p style="float:right">                   MySQL, PHP.</p>
+</article>
+<article class="skills">
+<strong>Platforms &<br>
+        tools</strong>
+<p style="float: right">Git, Windows, Eclipse, Visual Studio, Sublimetext, Dev c++, Turbo c++, Codeblocks</p>
+</article>
+<article class="skills">
+<strong>Web Technologies</strong>
+<p style="float: right">REST API, Web Services.</p>
+</article><br>
+<article class="skills">
+<strong>High Level Skills</strong>
+<p style="float: right">Coding, Web designing</p>
+</article>
+</article> 
+</section><br><hr>
+<!--end skills-->
+
+<!--Experience-->
+<section id="skills_section">
+<h2>Experience</h2>
+
+<article class="project">
+  <a class="proj_link external" rel="">
+  <strong>Web Developer(Summer Internship)</strong></a> 
+  <strong class="indent">BDA skills development private limited</strong>
+  <em class="indent">May 2020 - july 2020</em>
+<ul>
+<li><b>Role:</b>BackEnd Developer</li>
+<li><b>Scope:</b>HTML, CSS, PHP, MySQL, Jquery, JavaScript, Bootstrap</li>
+</ul>
+</article>
+
+<article class="project">
+  <a class="proj_link external" rel="">
+  <strong>VIRTUAL INTERNSHIP</strong></a> 
+  <strong class="indent" >H2 Ventures</strong>
+  <em class="indent" style="float: right">jun 2020 - july 2020</em>
+<ul>
+  <p>I have completed practical task modules in:</p>
+<li>Venture Capital - The Basics</li>
+<li>Investment selection processes</li> 
+<li>Startup Valuation</li>
+<li>Startup Growth</li>
+</ul>
+</article>
+<article class="project">
+  <a class="proj_link external" rel="">
+  <strong>Internshala Student Partner</strong></a> 
+  <strong class="indent" >Internshala</strong>
+  <em class="indent" style="float: right">Aug 2020- Sep 2020</em>
+</article>
+<article class="project">
+  <a class="proj_link external" rel="">
+  <strong>Campus Ambessdor</strong></a> 
+  <strong class="indent" >collegedunia.com</strong>
+  <em class="indent" style="float: right">Sep 2020- Oct 2020</em>
+</article>
+
+
+
+
+<!--end exeperience-->
+<hr>
+<!--start projects-->
+<br>
+<h2>Project Details</h2>
+
+<article id="bgc" class="skills">
+<div class="temp">
+<h5><a class="proj_link external" rel="">Student Attendance Management System</a></h5>
+<p>
+College Project<br>
+End to end enterprise application with features like student attendance, course selection, new student regestration, claculating attendance.
+
+Implementations
+</p>
+<ul>
+<li>Cake PHP framework configuration and custom extensions for MVC server-side logic</li>
+<li>MySQL configuration as attached data-store for above</li>
+<li>jQuery implementation for DHTML, AJAX form submits, validation, and image manipulation</li>
+
+</ul>
+</div>
+</article>
+
+<article id="mcc" class="skills">
+<div class="temp">
+<h5><a class="proj_link external" rel="https://github.com/purnima999/Netflix_clone">Netflix-Clone</a></h5>
+<p>
+website with features register, login, Q&A, like/unlike
+           
+
+Implementations:
+</p>
+<ul>
+
+<li>Implement with HTML, CSS, JavaScript, BootStrap, loacal storage</li>
+
+</ul>
+</div>
+</article>
+
+<article id="ypaa" class="skills">
+<div class="temp">
+<h5><a class="proj_link external" rel="https://github.com/purnima999/JAVA-Projects">Java GUI Project</a></h5>
+<p>
+
+Simple to view website that is mobile friendly and displays as much information as possible with a single page load.  Custom CMS features that are easy to learn and use.
+
+Implementations
+</p>
+<ul>
+<li>Java Gui based projects</li>
+</ul>
+</div>
+</article>
+<!--end projects-->
+
+<div id="body_popup">
+<a class="close">[X] Close</a>
+</div>
+
+</div>
+</body>
+</html>
